@@ -1,4 +1,5 @@
 /node_modules/
 /cypress/fixtures/
+/cypress/screenshots/
 
 package-lock.json
