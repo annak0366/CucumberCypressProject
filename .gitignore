@@ -1,5 +1,5 @@
 /node_modules/
 /cypress/fixtures/
-/cypress/screenshots/checkout.feature/
+/cypress/screenshots/
 
 package-lock.json
