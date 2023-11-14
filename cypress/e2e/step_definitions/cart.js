@@ -40,3 +40,4 @@ Then("The main page with the product cards is displayed", () => {
 Then("The {string} number badge is displayed in the cart icon", (value) => {
     mainPage.elements.numberBadge().should('have.text', value);
 })
+//jijij
