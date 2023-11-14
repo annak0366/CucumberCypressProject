@@ -22,7 +22,7 @@ Feature: Cart Feature
         And A user clicks on the Continue button
         Then The "Error: First Name is required" error message is displayed
 
-    # Scenario: Checking the functionality of the Cancel button on the second Checkout page
-    #     And A user enters valid data into the First Name, Last Name, Postal Code fields and clicks Continue button
-    #     And A user clicks on the Cancel button 
-    #     Then The first Checkout page is opened 
+    Scenario: Checking the functionality of the Cancel button on the second Checkout page
+        And A user enters valid data into the First Name, Last Name, Postal Code fields and clicks Continue button
+        And A user clicks on the Cancel button 
+        Then The first Checkout page is opened 
