@@ -6,7 +6,9 @@
   "scripts": {
     "test": "cypress run",
     "test:headless": "cypress run",
-    "test:report": "cypress run --reporter mochawesome"
+    "cypress:open": "cypress open",
+    "test:report": "cypress run --reporter mochawesome",
+    "merge:report": "marge cypress/reports/ -o cypress/reports/report.html"
   },
   "keywords": [
     "cypress"
