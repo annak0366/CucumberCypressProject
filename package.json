@@ -1,0 +1,25 @@
+{
+  "name": "cucumber-cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "Anna",
+  "license": "ISC",
+  "devDependencies": {
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "cypress": "^13.5.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "esbuild": "^0.19.5"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^19.1.0",
+    "cucumber": "^6.0.7",
+    "faker": "^6.6.6"
+  }
+}
