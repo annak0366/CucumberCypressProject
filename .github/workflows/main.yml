@@ -1,0 +1,28 @@
+name: Autotesting
+
+on:
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Install Dependencies
+        run: npm install
+                
+      - name: Run Tests
+        run: npm run test:headless
+
+      - name: Generate Test Report
+        run: npm run test:report
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: cypress-results
+          path: |
+            cypress/screenshots
+            cypress/reports/mochawesome-report
