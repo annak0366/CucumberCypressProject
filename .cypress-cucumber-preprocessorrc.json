@@ -19,6 +19,4 @@
       "[filepath].js",
       "cypress\\e2e\\step_definitions\\**/*.js"
     ]
-    
   }
-  

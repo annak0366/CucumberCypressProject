@@ -2,12 +2,8 @@ const { defineConfig } = require("cypress");
 const createBundler = require("@bahmutov/cypress-esbuild-preprocessor");
 const preprocessor = require("@badeball/cypress-cucumber-preprocessor");
 const createEsbuildPlugin = require("@badeball/cypress-cucumber-preprocessor/esbuild");
-
-
-
 async function setupNodeEvents(on, config) {
   await preprocessor.addCucumberPreprocessorPlugin(on, config);
-
   on(
     "file:preprocessor",
     createBundler({
@@ -16,7 +12,6 @@ async function setupNodeEvents(on, config) {
   );
   return config;
 }
-
 module.exports = defineConfig({
   e2e: {
     setupNodeEvents,
@@ -24,6 +19,4 @@ module.exports = defineConfig({
     baseUrl: "https://www.saucedemo.com",
     chromeWebSecurity: false,
   },
-    
-  
 });
