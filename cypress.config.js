@@ -19,4 +19,12 @@ module.exports = defineConfig({
     baseUrl: "https://www.saucedemo.com",
     chromeWebSecurity: false,
   },
+  reporter: "mochawesome",
+  reporterOptions: {
+    reportDir: "cypress/reports/mochawesome-report",
+    overwrite: false,
+    html: false,
+    json: true,
+  },
+  
 });
